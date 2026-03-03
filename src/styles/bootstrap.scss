@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;800&display=swap');
+
+$link-color: #04316a!important;
+$link-hover-color: #6B89BB!important;
+
+$theme-colors: (
+    "primary":  #6B89BB,
+    "secondary":  #94a3b8,
+    "success":  #6B89BB,
+    "info":  #04316a,
+    "warning":  #f8ac09,
+    "danger":  #b13247,
+    "light":  #F3F6F9,
+    "dark":  #212529,
+)!default;
+textarea {
+  font-size: 1.25rem!important;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(33, 79, 141, 0.6)!important;
+  outline: 0 none!important;
+}
+
+label {
+  font-weight: 300;
+  font-size: 12px;
+}
+// PLACEHOLDER
+::-webkit-input-placeholder {
+  font-weight: 300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: 300;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-weight: 300;
+}
+
+
+::-webkit-input-placeholder {
+  font-weight: 300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: 300;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  font-weight: 300;
+}
+
+.form-control {
+  border-radius: 10px!important;
+  border: 1px solid rgb(230, 235, 231)!important;
+}
+
+.form-check-label {
+  font-size: 16px!important;
+}
+legend {
+  position: relative;
+  bottom: 16px;
+  top:10px;
+  display: inline;
+  background-color: white ;
+  width: auto;
+  min-width: 20px;
+}
+span {
+  min-width: 80px;
+}
+
+.spanFormat {
+  background: #ffffff;
+  border: 1px solid rgb(171 177 252);
+  padding: 8px;
+  min-width: 20px;
+  &:hover, &:active, &:focus {
+    border: 2px solid rgb(171 177 252);
+  }
+}
+
+
+.spanFormat[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #555;
+}
+
+.spanFormat[placeholder]:empty:focus:before {
+  content: "";
+}
+
+@media print {
+  .spanFormat {
+    background: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 0px;
+    text-transform: uppercase;
+  }
+}
+
+/* import bootstrap to set changes */
+@import "bootstrap/scss/bootstrap";

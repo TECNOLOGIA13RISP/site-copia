@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://13registro.com.br
+
+# Sitemaps
+Sitemap: https://13registro.com.br/sitemap.xml

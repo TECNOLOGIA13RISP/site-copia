@@ -1,0 +1,55 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="436"
+  height="174"
+  viewBox="0 0 436 174"
+  role="img"
+  aria-labelledby="logoTitle logoDesc"
+>
+  <title id="logoTitle">Registro de Imóveis do Brasil</title>
+  <desc id="logoDesc">
+    Logotipo com símbolo circular azul e dourado ao lado do texto Registro de
+    Imóveis do Brasil
+  </desc>
+  <defs>
+    <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#45b8e7" />
+      <stop offset="100%" stop-color="#2b6fb1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="436" height="174" fill="transparent" />
+
+  <g transform="translate(12 17)">
+    <circle cx="54" cy="70" r="54" fill="url(#logoBlue)" />
+    <path
+      d="M9 61c13-24 38-39 66-39 18 0 35 6 49 16l-8 10c-11-8-25-13-40-13-21 0-39 10-50 26z"
+      fill="#d4a027"
+    />
+    <path d="M62 22c26 6 47 23 57 45L81 106 44 76z" fill="#ffffff" />
+  </g>
+
+  <g transform="translate(142 24)">
+    <text
+      x="0"
+      y="70"
+      font-family="'Segoe UI', Tahoma, Arial, sans-serif"
+      font-size="88"
+      font-weight="700"
+      fill="#1f2c63"
+    >
+      Registro
+    </text>
+    <text
+      x="6"
+      y="108"
+      font-family="'Segoe UI', Tahoma, Arial, sans-serif"
+      font-size="34"
+      font-style="italic"
+      font-weight="700"
+      fill="#2f2f2f"
+    >
+      de Imóveis do Brasil
+    </text>
+  </g>
+</svg>

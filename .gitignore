@@ -31,6 +31,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# vercel local project linking (keep this copy detached)
+.vercel/
+
 # sw stuff
 public/sw.js
 public/workbox-*.js

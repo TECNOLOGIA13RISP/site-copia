@@ -1,26 +1,49 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import * as S from './styles'
+
 export default function MapaCircunscricao() {
   return (
     <S.Wrapper>
-      <Container fluid>
+      <Container>
         <Row>
-          <Col className="text-center">
-            <h2 className="page-title">Localização e Circunscrição</h2>
+          <Col xl={6} lg={6} md={12} className="map-column">
+            <div className="section-title">
+              <h2>Localização</h2>
+            </div>
+            <div className="frame">
+              <iframe
+                title="Mapa de localização"
+                src="https://www.google.com/maps?q=R.%20Inacio%20Pereira%20da%20Rocha,%20142%20-%20Sao%20Paulo&output=embed"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </Col>
+          <Col xl={6} lg={6} md={12} className="map-column">
+            <div className="section-title section-title--with-action">
+              <h2>Área de Competência</h2>
+              <a
+                href="https://www.google.com/maps/d/u/0/viewer?mid=1CUoaD35Gj_bMAJlGyQM7_j5apfIM0qg&ll=-23.56664501313741%2C-46.66889205112169&z=14"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Saiba +
+              </a>
+            </div>
+            <div className="frame">
+              <iframe
+                title="Mapa de área de competência"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1CUoaD35Gj_bMAJlGyQM7_j5apfIM0qg&ll=-23.598676516082897%2C-46.66848672448381&z=13"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </Col>
         </Row>
       </Container>
-      <S.Map className="text-center">
-        <iframe
-          className="mapa"
-          src="https://www.google.com/maps/d/u/0/embed?mid=1CUoaD35Gj_bMAJlGyQM7_j5apfIM0qg&ll=-23.598676516082897%2C-46.66848672448381&z=13"
-          width="640"
-          height="480"
-          allowFullScreen
-          loading="lazy"
-        />
-      </S.Map>
     </S.Wrapper>
   )
 }

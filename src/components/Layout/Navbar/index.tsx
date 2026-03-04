@@ -65,8 +65,9 @@ export default function LayoutNavbar() {
                   className="brand-logo"
                   alt="Logotipo Registro de Imóveis do Brasil"
                   src={brandLogo}
-                  width={218}
-                  height={87}
+                  width={387}
+                  height={130}
+                  quality={100}
                   priority
                 />
                 <span className="brand-text">

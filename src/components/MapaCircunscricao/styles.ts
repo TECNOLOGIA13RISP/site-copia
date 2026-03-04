@@ -2,10 +2,16 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.section`
   background: #eceff3;
-  padding: 40px 0 72px;
+  padding: 30px 0 72px;
+
+  .maps-container {
+    max-width: 1720px;
+    padding-left: clamp(16px, 2.6vw, 48px);
+    padding-right: clamp(16px, 2.6vw, 48px);
+  }
 
   .maps-row {
-    row-gap: 22px;
+    row-gap: 24px;
   }
 
   .map-column {
@@ -20,6 +26,7 @@ export const Wrapper = styled.section`
     padding: 14px;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
   }
 
   .section-title {
@@ -79,17 +86,23 @@ export const Wrapper = styled.section`
     background: #fff;
     overflow: hidden;
     flex: 1;
+    min-height: clamp(360px, 33vw, 560px);
   }
 
   .frame iframe {
     border: 0;
     width: 100%;
-    height: 430px;
+    height: 100%;
   }
 
   @media only screen and (max-width: 1199px) {
-    .frame iframe {
-      height: 380px;
+    .maps-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .frame {
+      min-height: clamp(340px, 36vw, 500px);
     }
   }
 
@@ -98,13 +111,18 @@ export const Wrapper = styled.section`
       font-size: clamp(24px, 1.8vw, 32px);
     }
 
-    .frame iframe {
-      height: 340px;
+    .frame {
+      min-height: clamp(320px, 40vw, 430px);
     }
   }
 
   @media only screen and (max-width: 767px) {
     padding: 20px 0 44px;
+
+    .maps-container {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
 
     .map-column {
       margin-bottom: 0;
@@ -131,8 +149,8 @@ export const Wrapper = styled.section`
       padding: 4px 10px;
     }
 
-    .frame iframe {
-      height: 300px;
+    .frame {
+      min-height: 300px;
     }
   }
 `

@@ -5,7 +5,7 @@ import * as S from './styles'
 export default function MapaCircunscricao() {
   return (
     <S.Wrapper>
-      <Container>
+      <Container fluid className="maps-container">
         <Row className="maps-row">
           <Col xl={6} lg={6} md={6} sm={12} className="map-column">
             <div className="map-card">

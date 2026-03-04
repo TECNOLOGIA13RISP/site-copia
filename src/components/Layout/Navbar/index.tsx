@@ -114,7 +114,11 @@ export default function LayoutNavbar() {
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown id="menu-requerimentos" title="Requerimentos">
-                <NavDropdown.Item href="/requerimentos/averbacao">
+                <NavDropdown.Item
+                  href="https://www.ridigital.org.br/Servicos/frmRequerimentos.aspx"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Averbação
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/requerimentos/exame-e-calculo">

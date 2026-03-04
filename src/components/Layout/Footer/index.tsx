@@ -6,6 +6,8 @@ import * as S from './styles'
 import logoONR from '/public/images/logo_onr.webp'
 
 export default function LayoutFooter() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <S.Wrapper className="no-print" id="contato">
       <Container>
@@ -225,8 +227,8 @@ export default function LayoutFooter() {
         <Row>
           <Col>
             <p className="text-center">
-              © 2023 - 13º Registro de Imóveis de São Paulo - Todos os direitos
-              reservados
+              © {currentYear} - 13º Registro de Imóveis de São Paulo - Todos os
+              direitos reservados
             </p>
             <Link href="https://registradores.onr.org.br">
               <a>

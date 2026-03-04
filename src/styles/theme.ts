@@ -20,12 +20,12 @@ export default {
   colors: {
     theme: {
       white: '#ffffff',
-      primary: '#6B89BB',
-      secondary: '#94a3b8',
-      light: '#f1f5f9',
+      primary: '#1A2141',
+      secondary: '#0063A9',
+      light: '#EEF1F5',
       dark: '#212529',
       danger: '#b13247',
-      primaryDark: '#04316a'
+      primaryDark: '#16345F'
     },
     gray: {
       'gray-100': '#f7f8fc',

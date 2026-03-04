@@ -1,13 +1,13 @@
-﻿import styled from 'styled-components'
+import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-  background: #e5e7eb;
-  padding: 34px 0 66px;
+  background: var(--rib-bg);
+  padding: 42px 0 74px;
 
   .maps-container {
-    max-width: 1680px;
-    padding-left: clamp(14px, 2vw, 44px);
-    padding-right: clamp(14px, 2vw, 44px);
+    max-width: 1700px;
+    padding-left: clamp(16px, 2vw, 46px);
+    padding-right: clamp(16px, 2vw, 46px);
   }
 
   .maps-row {
@@ -23,16 +23,16 @@ export const Wrapper = styled.section`
     display: flex;
     align-items: flex-end;
     gap: 12px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   .section-head h2 {
     position: relative;
-    color: #1f4f83;
-    font-size: clamp(24px, 1.9vw, 38px);
+    color: var(--rib-blue-dark);
+    font-size: clamp(30px, 2.15vw, 44px);
     font-weight: 500;
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     white-space: nowrap;
   }
 
@@ -41,14 +41,14 @@ export const Wrapper = styled.section`
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 74px;
+    width: 78px;
     height: 3px;
-    background: #d9ab2d;
+    background: var(--rib-gold);
   }
 
   .head-rule {
     flex: 1;
-    border-bottom: 1px solid #c7cdd6;
+    border-bottom: 1px solid #c8d0da;
     margin-bottom: 1px;
   }
 
@@ -61,11 +61,11 @@ export const Wrapper = styled.section`
   }
 
   .map-action {
-    border: 1px solid #deb455;
-    color: #b8881d;
+    border: 1px solid var(--rib-gold);
+    color: #b88616;
     border-radius: 6px;
-    padding: 8px 26px;
-    font-size: 14px;
+    padding: 8px 24px;
+    font-size: 15px;
     font-weight: 500;
     text-decoration: none;
     line-height: 1;
@@ -80,14 +80,15 @@ export const Wrapper = styled.section`
   }
 
   .frame {
-    border: 16px solid #d4d9e0;
-    background: #d4d9e0;
+    border: 14px solid #d6dce4;
+    background: #d6dce4;
+    border-radius: 2px;
   }
 
   .frame iframe {
     border: 0;
     width: 100%;
-    height: clamp(300px, 23vw, 430px);
+    height: clamp(320px, 25vw, 460px);
     display: block;
   }
 
@@ -97,7 +98,7 @@ export const Wrapper = styled.section`
     }
 
     .frame iframe {
-      height: clamp(280px, 28vw, 380px);
+      height: clamp(300px, 30vw, 420px);
     }
   }
 
@@ -117,7 +118,7 @@ export const Wrapper = styled.section`
   }
 
   @media only screen and (max-width: 767px) {
-    padding: 24px 0 42px;
+    padding: 28px 0 48px;
 
     .map-column {
       margin-bottom: 0;
@@ -145,7 +146,7 @@ export const Wrapper = styled.section`
     }
 
     .frame iframe {
-      height: 290px;
+      height: 300px;
     }
   }
 `

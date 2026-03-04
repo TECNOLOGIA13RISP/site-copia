@@ -3,15 +3,15 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   .hero-section {
     position: relative;
-    min-height: 620px;
+    min-height: 580px;
     display: flex;
     align-items: center;
-    padding: 48px 0;
+    padding: 54px 0;
     background-image: linear-gradient(
-        118deg,
-        rgba(7, 36, 87, 0.96) 20%,
-        rgba(6, 45, 109, 0.88) 65%,
-        rgba(9, 59, 126, 0.9) 100%
+        120deg,
+        rgba(22, 52, 95, 0.96) 18%,
+        rgba(26, 33, 65, 0.94) 64%,
+        rgba(0, 99, 169, 0.88) 100%
       ),
       url('/images/banner_home.webp');
     background-position: center;
@@ -22,12 +22,12 @@ export const Wrapper = styled.div`
 
   .hero-copy {
     color: #fff;
-    padding: 40px 20px 40px 0;
+    padding: 36px 22px 36px 0;
     max-width: 760px;
   }
 
   .hero-copy h1 {
-    color: #e1b334;
+    color: var(--rib-gold);
     font-size: clamp(40px, 4vw, 72px);
     line-height: 1.05;
     font-weight: 800;
@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
 
   .hero-copy .subtitle {
     font-size: clamp(20px, 1.8vw, 32px);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.3;
     margin-bottom: 24px;
     max-width: 880px;
@@ -44,8 +44,9 @@ export const Wrapper = styled.div`
 
   .hero-copy h2 {
     font-size: clamp(20px, 1.5vw, 28px);
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 14px;
+    color: #f4f8ff;
   }
 
   .hero-copy ul {
@@ -59,16 +60,19 @@ export const Wrapper = styled.div`
 
   .hero-copy li {
     position: relative;
-    padding-left: 48px;
+    padding-left: 28px;
     margin-bottom: 10px;
   }
 
   .hero-copy li::before {
-    content: '\\279C';
+    content: '';
     position: absolute;
     left: 0;
-    top: 0;
-    color: #f6f8fd;
+    top: 11px;
+    width: 12px;
+    height: 2px;
+    border-radius: 2px;
+    background: #f6f8fd;
   }
 
   .hero-media {

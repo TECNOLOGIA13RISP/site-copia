@@ -8,7 +8,7 @@ import Head from 'next/head'
 
 const Index = () => {
   const content = {
-    title: 'Bem-vindos ao portal 13RISP',
+    title: 'Bem-vindos ao portal do 13º Registro de Imóveis',
     subtitle:
       '13º Oficial de Registro de Imóveis da Capital do Estado de São Paulo'
   }
@@ -16,18 +16,18 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>13° Registro de Imóveis de São Paulo</title>
+        <title>13º Registro de Imóveis de São Paulo</title>
         <meta
           name="description"
-          content="Portal de serviços online do 13° Registro de Imóveis de São Paulo."
+          content="Portal de serviços online do 13º Registro de Imóveis de São Paulo."
         />
         <meta
           property="og:title"
-          content="13° Registro de Imóveis de São Paulo"
+          content="13º Registro de Imóveis de São Paulo"
         />
         <meta
           property="og:description"
-          content="Portal de serviços online do 13° Registro de Imóveis de São Paulo."
+          content="Portal de serviços online do 13º Registro de Imóveis de São Paulo."
         />
         <meta property="og:url" content="https://13registro.com.br" />
         <meta property="og:type" content="website" />

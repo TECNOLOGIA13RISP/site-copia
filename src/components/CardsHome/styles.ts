@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-  background: #eceff3;
+  background: var(--rib-bg);
   padding: 90px 0 72px;
 
   .services-highlight {
@@ -10,7 +10,7 @@ export const Wrapper = styled.section`
   }
 
   .services-highlight h2 {
-    color: #0d4f91;
+    color: var(--rib-blue-dark);
     font-size: clamp(28px, 2vw, 42px);
     font-weight: 500;
     margin-bottom: 12px;
@@ -19,7 +19,7 @@ export const Wrapper = styled.section`
   .services-highlight .title-line {
     width: 190px;
     height: 3px;
-    background: #ddb13a;
+    background: var(--rib-gold);
     margin-bottom: 26px;
   }
 
@@ -32,9 +32,9 @@ export const Wrapper = styled.section`
 
   .service-card {
     min-height: 182px;
-    border: 1px solid #d8dde4;
+    border: 1px solid #d4dae3;
     border-radius: 14px;
-    background: #f6f8fb;
+    background: #f8fafd;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@ export const Wrapper = styled.section`
     text-align: center;
     margin-bottom: 20px;
     padding: 26px 14px;
-    color: #0f5ea9;
+    color: var(--rib-blue);
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -50,7 +50,7 @@ export const Wrapper = styled.section`
   .service-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 28px rgba(15, 47, 90, 0.16);
-    color: #0a4f92;
+    color: var(--rib-blue-dark);
   }
 
   .service-card svg {

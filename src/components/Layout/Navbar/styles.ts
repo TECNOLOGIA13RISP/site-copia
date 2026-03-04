@@ -2,21 +2,21 @@
 
 export const Wrapper = styled.div`
   .top-strip {
-    background: #0f4f94;
+    background: var(--rib-blue);
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1;
     padding: 0;
   }
 
   .top-strip__content {
-    min-height: 28px;
+    min-height: 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 14px;
-    padding-left: clamp(14px, 1.8vw, 34px);
-    padding-right: clamp(14px, 1.8vw, 34px);
+    gap: 18px;
+    padding-left: clamp(18px, 2vw, 42px);
+    padding-right: clamp(18px, 2vw, 42px);
     flex-wrap: nowrap;
   }
 
@@ -24,13 +24,13 @@ export const Wrapper = styled.div`
   .top-strip__contact {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     white-space: nowrap;
   }
 
   .top-strip__contact {
     margin-left: auto;
-    gap: 18px;
+    gap: 22px;
   }
 
   .top-strip a,
@@ -49,51 +49,53 @@ export const Wrapper = styled.div`
 
   .main-navbar {
     background-color: #fff;
-    border-bottom: 1px solid #d7dce4;
-    min-height: 94px;
+    border-bottom: 1px solid #d4dae3;
+    min-height: 116px;
     padding: 0;
   }
 
   .main-navbar__content {
-    padding-left: clamp(16px, 1.8vw, 34px);
-    padding-right: clamp(16px, 1.8vw, 34px);
+    padding-left: clamp(18px, 2.2vw, 46px);
+    padding-right: clamp(18px, 2.2vw, 46px);
     align-items: center;
   }
 
   .navbar-brand {
-    margin-right: clamp(20px, 2.4vw, 58px);
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-right: clamp(26px, 2.6vw, 70px);
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .brand-link {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     text-decoration: none;
   }
 
   .brand-logo {
-    width: 168px !important;
+    width: clamp(200px, 12.8vw, 252px) !important;
     height: auto !important;
+    object-fit: contain;
   }
 
   .brand-text {
     display: flex;
     flex-direction: column;
-    color: #1c2d52;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--rib-navy);
     line-height: 1.08;
     white-space: nowrap;
   }
 
   .brand-text strong {
-    font-size: 19px;
-    font-weight: 800;
+    font-size: clamp(21px, 1.35vw, 28px);
+    font-weight: 600;
   }
 
   .brand-text small {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: clamp(16px, 1.05vw, 21px);
+    font-weight: 500;
   }
 
   .navbar-collapse {
@@ -102,16 +104,17 @@ export const Wrapper = styled.div`
 
   .navbar-nav {
     align-items: center;
-    gap: 8px;
+    gap: 12px;
   }
 
   .nav-link,
   .dropdown-toggle {
-    color: #2f3a4f !important;
-    font-size: 17px;
+    color: #2e3a4c !important;
+    font-size: clamp(17px, 0.95vw, 22px);
     font-weight: 500;
-    padding: 34px 10px !important;
+    padding: 44px 10px !important;
     white-space: nowrap;
+    border-bottom: 2px solid transparent;
   }
 
   .dropdown-toggle::after {
@@ -121,48 +124,49 @@ export const Wrapper = styled.div`
 
   .nav-link:hover,
   .dropdown-toggle:hover {
-    color: #18528f !important;
+    color: var(--rib-blue) !important;
   }
 
   .active-link {
-    color: #d9ab2d !important;
-    border-bottom: 2px solid #d9ab2d;
+    color: var(--rib-gold) !important;
+    border-bottom-color: var(--rib-gold);
   }
 
   .dropdown-menu {
     border-radius: 6px;
-    border: 1px solid #d7dce4;
+    border: 1px solid #d4dae3;
     padding: 6px;
-    margin-top: -4px;
+    margin-top: -6px;
   }
 
   .dropdown-item {
-    color: #24355f;
+    color: var(--rib-blue-dark);
     border-radius: 4px;
-    padding: 8px 10px;
+    padding: 8px 12px;
+    font-size: 15px;
   }
 
   .dropdown-item:hover {
-    background: #edf2f8;
+    background: #edf3f9;
   }
 
   @media only screen and (max-width: 1199px) {
     .brand-logo {
-      width: 150px !important;
+      width: 178px !important;
     }
 
     .brand-text strong {
-      font-size: 17px;
+      font-size: 20px;
     }
 
     .brand-text small {
-      font-size: 13px;
+      font-size: 15px;
     }
 
     .nav-link,
     .dropdown-toggle {
       font-size: 16px;
-      padding: 24px 8px !important;
+      padding: 34px 8px !important;
     }
   }
 
@@ -172,12 +176,17 @@ export const Wrapper = styled.div`
     }
 
     .main-navbar {
-      min-height: 74px;
+      min-height: 84px;
       padding: 6px 0;
     }
 
+    .navbar-brand {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
     .brand-logo {
-      width: 136px !important;
+      width: 152px !important;
     }
 
     .brand-text strong {

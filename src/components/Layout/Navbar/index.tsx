@@ -76,7 +76,7 @@ export default function LayoutNavbar() {
                 />
                 <span className="brand-text">
                   <strong>13º Registro de Imóveis</strong>
-                  <small>de São Paulo/SP</small>
+                  <small>de São Paulo - SP</small>
                 </span>
               </a>
             </Link>

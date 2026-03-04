@@ -7,6 +7,17 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root {
+    --rib-navy: #1a2141;
+    --rib-blue-dark: #16345f;
+    --rib-blue: #0063a9;
+    --rib-cyan: #009fe3;
+    --rib-gold: #d9ab2d;
+    --rib-orange: #ec6608;
+    --rib-gray: #dadada;
+    --rib-bg: #eef1f5;
+  }
+
   a {
     color: #04316a;
     &:hover {
@@ -16,9 +27,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
+    background: var(--rib-bg);
+    color: var(--rib-navy);
   }
   @media print {
     .no-print, .no-print * {

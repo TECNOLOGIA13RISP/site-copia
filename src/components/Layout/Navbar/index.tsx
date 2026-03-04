@@ -13,7 +13,7 @@ import React from 'react'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import * as S from './styles'
 
-const brandLogo = '/images/logo_registro_brasil.svg'
+const brandLogo = '/images/Logo Registro de imoveis.jpg'
 
 export default function LayoutNavbar() {
   const router = useRouter()
@@ -22,7 +22,7 @@ export default function LayoutNavbar() {
     <S.Wrapper className="no-print">
       <NoticeModal />
       <div className="top-strip">
-        <Container className="top-strip__content">
+        <Container fluid className="top-strip__content">
           <div className="top-strip__social">
             <span>Acesse nossas mídias sociais:</span>
             <a
@@ -57,7 +57,7 @@ export default function LayoutNavbar() {
       </div>
 
       <Navbar collapseOnSelect expand="lg" className="main-navbar">
-        <Container>
+        <Container fluid className="main-navbar__content">
           <Navbar.Brand>
             <Link href="/">
               <a className="brand-link">

@@ -5,17 +5,19 @@ export const Wrapper = styled.div`
     background: #0d4f91;
     color: #fff;
     font-size: 13px;
-    line-height: 1.3;
-    padding: 6px 0;
+    line-height: 1.2;
+    padding: 2px 0;
   }
 
   .top-strip__content {
-    min-height: 34px;
+    min-height: 28px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 20px;
     flex-wrap: wrap;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
   .top-strip__social,
@@ -24,6 +26,10 @@ export const Wrapper = styled.div`
     align-items: center;
     gap: 14px;
     flex-wrap: wrap;
+  }
+
+  .top-strip__contact {
+    margin-left: auto;
   }
 
   .top-strip a,
@@ -39,16 +45,21 @@ export const Wrapper = styled.div`
   .main-navbar {
     background-color: #fff;
     border-bottom: 2px solid #d6dce4;
-    min-height: 90px;
-    padding: 10px 0;
+    min-height: 102px;
+    padding: 12px 0;
   }
 
-  .main-navbar .container {
+  .main-navbar__content {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .main-navbar .main-navbar__content {
     align-items: center;
   }
 
   .navbar-brand {
-    margin-right: 22px;
+    margin-right: 56px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -56,12 +67,12 @@ export const Wrapper = styled.div`
   .brand-link {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
     text-decoration: none;
   }
 
   .brand-logo {
-    width: 218px !important;
+    width: 240px !important;
     height: auto !important;
   }
 
@@ -89,6 +100,7 @@ export const Wrapper = styled.div`
 
   .navbar-nav {
     align-items: center;
+    gap: 12px;
   }
 
   .nav-link,
@@ -96,7 +108,7 @@ export const Wrapper = styled.div`
     color: #2c3553 !important;
     font-size: 17px;
     font-weight: 500;
-    padding: 22px 12px !important;
+    padding: 30px 10px !important;
     white-space: nowrap;
   }
 
@@ -128,7 +140,7 @@ export const Wrapper = styled.div`
 
   @media only screen and (max-width: 1199px) {
     .brand-logo {
-      width: 184px !important;
+      width: 210px !important;
     }
 
     .brand-text strong {
@@ -157,12 +169,12 @@ export const Wrapper = styled.div`
     }
 
     .main-navbar {
-      min-height: 72px;
+      min-height: 76px;
       padding: 8px 0;
     }
 
     .brand-logo {
-      width: 130px !important;
+      width: 148px !important;
       height: auto !important;
     }
 
@@ -180,6 +192,7 @@ export const Wrapper = styled.div`
 
     .navbar-nav {
       align-items: flex-start;
+      gap: 0;
     }
   }
 `

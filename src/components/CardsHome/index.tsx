@@ -32,9 +32,8 @@ const serviceCards: ServiceCard[] = [
   },
   {
     icon: faClock,
-    title: 'Agendamentos',
-    href: 'https://www.registrodeimoveis.org.br/',
-    external: true
+    title: 'Tabela de Custas',
+    href: '/tabela-de-custas'
   },
   {
     icon: faFileAlt,

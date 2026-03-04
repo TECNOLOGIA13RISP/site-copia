@@ -103,14 +103,28 @@ export default function LayoutNavbar() {
                 <NavDropdown.Item href="/#servicos">
                   Solicitar certidão
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#servicos">
-                  Agendamentos
+                <NavDropdown.Item href="/tabela-de-custas">
+                  Tabela de Custas
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/#servicos">
                   Consultar prenotações
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/#servicos">
                   Consultar certidões
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown id="menu-requerimentos" title="Requerimentos">
+                <NavDropdown.Item href="/requerimentos/averbacao">
+                  Averbação
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/requerimentos/exame-e-calculo">
+                  Exame e Cálculo
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/requerimentos/registro">
+                  Registro
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/requerimentos/primeira-aquisicao-sfh">
+                  Primeira Aquisição SFH
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/#contato">Contatos</Nav.Link>

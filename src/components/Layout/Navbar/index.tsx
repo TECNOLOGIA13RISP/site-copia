@@ -3,7 +3,7 @@ import {
   faInstagram,
   faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons'
-import { faClock, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NoticeModal from 'components/NoticeModal'
 import Image from 'next/image'
@@ -49,10 +49,8 @@ export default function LayoutNavbar() {
           </div>
           <div className="top-strip__contact">
             <span>
-              <FontAwesomeIcon icon={faPhoneAlt} /> (11) 5186-2800
-            </span>
-            <span>
-              <FontAwesomeIcon icon={faClock} /> Segunda a sexta, das 9h às 16h
+              <FontAwesomeIcon icon={faClock} /> Segunda a sexta, das 9 às 16
+              horas
             </span>
           </div>
         </Container>
@@ -72,7 +70,7 @@ export default function LayoutNavbar() {
                   priority
                 />
                 <span className="brand-text">
-                  <strong>13° Registro de Imóveis</strong>
+                  <strong>13º Registro de Imóveis</strong>
                   <small>de São Paulo/SP</small>
                 </span>
               </a>

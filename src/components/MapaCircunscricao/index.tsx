@@ -14,7 +14,7 @@ export default function MapaCircunscricao() {
             <div className="frame">
               <iframe
                 title="Mapa de localização"
-                src="https://www.google.com/maps?q=R.%20Inacio%20Pereira%20da%20Rocha,%20142%20-%20Sao%20Paulo&output=embed"
+                src="https://www.google.com/maps?q=Av.%20Sao%20Gabriel,%20201%20-%20Itaim%20Bibi,%20Sao%20Paulo%20-%20SP,%2001435-001&output=embed"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

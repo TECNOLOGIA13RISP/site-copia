@@ -7,7 +7,7 @@ import logoONR from '/public/images/logo_onr.webp'
 
 export default function LayoutFooter() {
   return (
-    <S.Wrapper className="no-print">
+    <S.Wrapper className="no-print" id="contato">
       <Container>
         <Row>
           <Col className="footer-title mb-4">

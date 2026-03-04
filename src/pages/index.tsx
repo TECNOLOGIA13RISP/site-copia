@@ -1,6 +1,5 @@
 ﻿import BannerHome from 'components/BannerHome'
 import CardsHome from 'components/CardsHome'
-import HomeContato from 'components/HomeContato'
 import HomeInformacoes from 'components/HomeInformacoes'
 import LayoutFooter from 'components/Layout/Footer'
 import LayoutNavbar from 'components/Layout/Navbar'
@@ -37,7 +36,6 @@ const Index = () => {
       <BannerHome title={content.title} subtitle={content.subtitle} />
       <CardsHome />
       <HomeInformacoes />
-      <HomeContato />
       <MapaCircunscricao />
       <LayoutFooter />
     </>

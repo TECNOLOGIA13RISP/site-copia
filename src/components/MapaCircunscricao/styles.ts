@@ -1,13 +1,13 @@
-import styled from 'styled-components'
+﻿import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-  background: #eceff3;
-  padding: 30px 0 72px;
+  background: #e5e7eb;
+  padding: 34px 0 66px;
 
   .maps-container {
-    max-width: 1720px;
-    padding-left: clamp(16px, 2.6vw, 48px);
-    padding-right: clamp(16px, 2.6vw, 48px);
+    max-width: 1680px;
+    padding-left: clamp(14px, 2vw, 44px);
+    padding-right: clamp(14px, 2vw, 44px);
   }
 
   .maps-row {
@@ -16,141 +16,136 @@ export const Wrapper = styled.section`
 
   .map-column {
     display: flex;
-  }
-
-  .map-card {
-    width: 100%;
-    background: #e4e8ee;
-    border: 1px solid #d4dae2;
-    border-radius: 8px;
-    padding: 14px;
-    display: flex;
     flex-direction: column;
-    min-height: 100%;
   }
 
-  .section-title {
+  .section-head {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
     gap: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
-  .section-title h2 {
-    color: #0d4f91;
-    font-size: clamp(28px, 1.7vw, 40px);
+  .section-head h2 {
+    position: relative;
+    color: #1f4f83;
+    font-size: clamp(24px, 1.9vw, 38px);
     font-weight: 500;
     margin: 0;
+    padding-bottom: 10px;
+    white-space: nowrap;
   }
 
-  .section-title::after {
+  .section-head h2::after {
     content: '';
-    width: 140px;
-    max-width: 28%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 74px;
     height: 3px;
-    background: #ddb13a;
+    background: #d9ab2d;
   }
 
-  .section-title--with-action {
+  .head-rule {
+    flex: 1;
+    border-bottom: 1px solid #c7cdd6;
+    margin-bottom: 1px;
+  }
+
+  .section-head--action {
     gap: 10px;
   }
 
-  .section-title--with-action::after {
-    flex: 1;
-    margin-left: 12px;
-    max-width: 140px;
+  .section-head--action .head-rule {
+    max-width: 190px;
   }
 
   .map-action {
-    border: 1px solid #9fb0c8;
-    color: #1f4776;
-    border-radius: 4px;
-    padding: 5px 12px;
+    border: 1px solid #deb455;
+    color: #b8881d;
+    border-radius: 6px;
+    padding: 8px 26px;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
-    line-height: 1.2;
+    line-height: 1;
     white-space: nowrap;
+    margin: 0 10px 2px;
     background: transparent;
   }
 
   .map-action:hover {
-    background: #f2f5fa;
-    color: #173c66;
+    background: #fff9ea;
+    color: #9f7418;
   }
 
   .frame {
-    border: 1px solid #cbd2dc;
-    border-radius: 6px;
-    background: #fff;
-    overflow: hidden;
-    flex: 1;
-    min-height: clamp(360px, 33vw, 560px);
+    border: 16px solid #d4d9e0;
+    background: #d4d9e0;
   }
 
   .frame iframe {
     border: 0;
     width: 100%;
-    height: 100%;
+    height: clamp(300px, 23vw, 430px);
+    display: block;
   }
 
   @media only screen and (max-width: 1199px) {
-    .maps-container {
-      padding-left: 20px;
-      padding-right: 20px;
+    .frame {
+      border-width: 12px;
     }
 
-    .frame {
-      min-height: clamp(340px, 36vw, 500px);
+    .frame iframe {
+      height: clamp(280px, 28vw, 380px);
     }
   }
 
   @media only screen and (max-width: 991px) {
-    .section-title h2 {
-      font-size: clamp(24px, 1.8vw, 32px);
+    .section-head h2 {
+      font-size: clamp(20px, 2vw, 30px);
     }
 
-    .frame {
-      min-height: clamp(320px, 40vw, 430px);
+    .section-head--action .head-rule {
+      max-width: none;
+    }
+
+    .map-action {
+      padding: 7px 16px;
+      margin: 0 6px 2px;
     }
   }
 
   @media only screen and (max-width: 767px) {
-    padding: 20px 0 44px;
-
-    .maps-container {
-      padding-left: 14px;
-      padding-right: 14px;
-    }
+    padding: 24px 0 42px;
 
     .map-column {
       margin-bottom: 0;
     }
 
-    .map-card {
-      padding: 10px;
-    }
-
-    .section-title {
-      gap: 8px;
+    .section-head {
+      align-items: center;
       flex-wrap: wrap;
+      gap: 8px;
     }
 
-    .section-title::after,
-    .section-title--with-action::after {
-      width: 80px;
-      max-width: none;
-      margin-left: 0;
+    .head-rule {
+      width: 100%;
+      flex: 0 0 100%;
     }
 
     .map-action {
+      padding: 6px 14px;
       font-size: 13px;
-      padding: 4px 10px;
+      margin: 0;
     }
 
     .frame {
-      min-height: 300px;
+      border-width: 10px;
+    }
+
+    .frame iframe {
+      height: 290px;
     }
   }
 `

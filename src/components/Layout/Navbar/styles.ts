@@ -1,12 +1,12 @@
-import styled from 'styled-components'
+﻿import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   .top-strip {
-    background: #0d4f91;
+    background: #0f4f94;
     color: #fff;
-    font-size: 13px;
-    line-height: 1.2;
-    padding: 2px 0;
+    font-size: 12px;
+    line-height: 1;
+    padding: 0;
   }
 
   .top-strip__content {
@@ -14,10 +14,10 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding-left: 22px;
-    padding-right: 22px;
+    gap: 14px;
+    padding-left: clamp(14px, 1.8vw, 34px);
+    padding-right: clamp(14px, 1.8vw, 34px);
+    flex-wrap: nowrap;
   }
 
   .top-strip__social,
@@ -25,11 +25,12 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 14px;
-    flex-wrap: wrap;
+    white-space: nowrap;
   }
 
   .top-strip__contact {
     margin-left: auto;
+    gap: 18px;
   }
 
   .top-strip a,
@@ -38,28 +39,29 @@ export const Wrapper = styled.div`
     text-decoration: none;
   }
 
+  .top-strip a:hover {
+    color: #e8f1ff;
+  }
+
   .top-strip svg {
-    margin-right: 6px;
+    margin-right: 5px;
   }
 
   .main-navbar {
     background-color: #fff;
-    border-bottom: 2px solid #d6dce4;
-    min-height: 102px;
-    padding: 12px 0;
+    border-bottom: 1px solid #d7dce4;
+    min-height: 94px;
+    padding: 0;
   }
 
   .main-navbar__content {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  .main-navbar .main-navbar__content {
+    padding-left: clamp(16px, 1.8vw, 34px);
+    padding-right: clamp(16px, 1.8vw, 34px);
     align-items: center;
   }
 
   .navbar-brand {
-    margin-right: 56px;
+    margin-right: clamp(20px, 2.4vw, 58px);
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -67,30 +69,30 @@ export const Wrapper = styled.div`
   .brand-link {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     text-decoration: none;
   }
 
   .brand-logo {
-    width: 240px !important;
+    width: 168px !important;
     height: auto !important;
   }
 
   .brand-text {
     display: flex;
     flex-direction: column;
-    color: #1f2d52;
-    line-height: 1.15;
+    color: #1c2d52;
+    line-height: 1.08;
     white-space: nowrap;
   }
 
   .brand-text strong {
-    font-size: 28px;
+    font-size: 19px;
     font-weight: 800;
   }
 
   .brand-text small {
-    font-size: 19px;
+    font-size: 14px;
     font-weight: 700;
   }
 
@@ -100,38 +102,44 @@ export const Wrapper = styled.div`
 
   .navbar-nav {
     align-items: center;
-    gap: 12px;
+    gap: 8px;
   }
 
   .nav-link,
   .dropdown-toggle {
-    color: #2c3553 !important;
+    color: #2f3a4f !important;
     font-size: 17px;
     font-weight: 500;
-    padding: 30px 10px !important;
+    padding: 34px 10px !important;
     white-space: nowrap;
+  }
+
+  .dropdown-toggle::after {
+    margin-left: 6px;
+    vertical-align: middle;
   }
 
   .nav-link:hover,
   .dropdown-toggle:hover {
-    color: #0d4f91 !important;
+    color: #18528f !important;
   }
 
   .active-link {
-    color: #e6b327 !important;
-    border-bottom: 3px solid #e6b327;
+    color: #d9ab2d !important;
+    border-bottom: 2px solid #d9ab2d;
   }
 
   .dropdown-menu {
-    border-radius: 8px;
-    border: 1px solid #d6dce4;
-    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #d7dce4;
+    padding: 6px;
+    margin-top: -4px;
   }
 
   .dropdown-item {
     color: #24355f;
-    border-radius: 6px;
-    padding: 8px 12px;
+    border-radius: 4px;
+    padding: 8px 10px;
   }
 
   .dropdown-item:hover {
@@ -140,26 +148,21 @@ export const Wrapper = styled.div`
 
   @media only screen and (max-width: 1199px) {
     .brand-logo {
-      width: 210px !important;
+      width: 150px !important;
     }
 
     .brand-text strong {
-      font-size: 22px;
+      font-size: 17px;
     }
 
     .brand-text small {
-      font-size: 16px;
+      font-size: 13px;
     }
 
     .nav-link,
     .dropdown-toggle {
       font-size: 16px;
-      padding: 14px 10px !important;
-      border-bottom: 1px solid #eef2f6;
-    }
-
-    .active-link {
-      border-bottom: 1px solid #e6b327;
+      padding: 24px 8px !important;
     }
   }
 
@@ -169,21 +172,20 @@ export const Wrapper = styled.div`
     }
 
     .main-navbar {
-      min-height: 76px;
-      padding: 8px 0;
+      min-height: 74px;
+      padding: 6px 0;
     }
 
     .brand-logo {
-      width: 148px !important;
-      height: auto !important;
+      width: 136px !important;
     }
 
     .brand-text strong {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .brand-text small {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .navbar-collapse {
@@ -193,6 +195,16 @@ export const Wrapper = styled.div`
     .navbar-nav {
       align-items: flex-start;
       gap: 0;
+    }
+
+    .nav-link,
+    .dropdown-toggle {
+      padding: 12px 0 !important;
+      border-bottom: 1px solid #edf2f8;
+    }
+
+    .active-link {
+      border-bottom: 1px solid #d9ab2d;
     }
   }
 `

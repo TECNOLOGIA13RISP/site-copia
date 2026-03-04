@@ -1,9 +1,9 @@
-import {
+﻿import {
   faFacebookF,
   faInstagram,
   faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons'
-import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NoticeModal from 'components/NoticeModal'
 import Image from 'next/image'
@@ -47,7 +47,11 @@ export default function LayoutNavbar() {
               <FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn
             </a>
           </div>
+
           <div className="top-strip__contact">
+            <span>
+              <FontAwesomeIcon icon={faPhoneAlt} /> (11) 5186-2800
+            </span>
             <span>
               <FontAwesomeIcon icon={faClock} /> Segunda a sexta, das 9 às 16
               horas

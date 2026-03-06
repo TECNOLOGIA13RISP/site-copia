@@ -65,7 +65,7 @@ export default function LayoutFooter() {
             <p>Avenida São Gabriel, nº 201</p>
             <p>1º andar - Jardim Paulista</p>
             <p>CEP 01435-001 - São Paulo - SP</p>
-            <h3>Dr. Carlos Eduardo de Almeida Martins de Andrade</h3>
+            <h3>Dr. Carlos Eduardo Almeida Martins de Andrade</h3>
           </Col>
           <Col
             xl={3}

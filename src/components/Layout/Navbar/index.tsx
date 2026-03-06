@@ -50,7 +50,7 @@ export default function LayoutNavbar() {
 
           <div className="top-strip__contact">
             <span>
-              <FontAwesomeIcon icon={faPhoneAlt} /> (11) 5186-2800
+              <FontAwesomeIcon icon={faPhoneAlt} /> (11) 3218-0090
             </span>
             <span>
               <FontAwesomeIcon icon={faClock} /> Segunda a sexta, das 9 às 16
